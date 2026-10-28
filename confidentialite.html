@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité · Luma-Gateway</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 16px; color: #1d2430; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e3e7ee; background: #14181f; } a { color: #8ab4f8; } }
+</style>
+</head>
+<body>
+<h1>Règles de confidentialité</h1>
+<p>Luma-Gateway est un logiciel privé, installé chez son propriétaire, qui l'utilise seul.</p>
+<h2>Accès à Google Drive</h2>
+<ul>
+  <li>La passerelle demande uniquement l'accès <code>drive.file</code> : elle ne voit que les fichiers qu'elle a
+    créés elle-même, jamais le reste du Drive.</li>
+  <li>Elle y dépose une sauvegarde de sa configuration, <strong>chiffrée sur la passerelle</strong> avant l'envoi,
+    avec une phrase connue du seul propriétaire.</li>
+</ul>
+<h2>Données</h2>
+<ul>
+  <li>Aucune donnée n'est envoyée à un autre service, vendue ni partagée.</li>
+  <li>Le jeton d'accès Google reste sur la passerelle. Le propriétaire peut le révoquer à tout moment dans son compte
+    Google (Sécurité → Applications tierces).</li>
+</ul>
+<p><a href="./">Luma-Gateway</a></p>
+</body>
+</html>
